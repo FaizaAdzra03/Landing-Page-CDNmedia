@@ -2,6 +2,8 @@
   box-sizing: border-box;
 
   font-family: "Work Sans", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 /* bagian 2 */
 /* Main */
@@ -43,7 +45,7 @@
       padding: 10px;
       border-radius: 30px;
       font-weight: 600;
-      min-width: 200px;
+      width: 200px;
       align-self: center;
       box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1);
     }
@@ -62,6 +64,7 @@
   align-items: center;
   justify-content: center;
   gap: 20px;
+  text-align: center;
 
   h3 {
     font-size: 35px;
@@ -88,6 +91,7 @@
   justify-content: center;
   flex-direction: column;
   gap: 20px;
+  text-align: center;
 
   h3 {
     font-size: 35px;
@@ -140,6 +144,7 @@
   align-items: center;
   justify-content: center;
   gap: 15px;
+  text-align: center;
 
   h2 {
     font-size: 35px;
@@ -195,12 +200,26 @@
   }
 }
 
+.horizontal-scroll{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  overflow-x: scroll;
+  scrollbar-color: transparent transparent;
+}
+
+.horizontal-scroll::-webkit-scrollbar{
+  display: none;
+}
+
 /* Penulis Sukses */
 .penulis-sukses-section {
   margin: 100px 0px 30px 0px;
   background: linear-gradient(to top, #316d4f, #658374);
   padding-top: 30px;
   padding-bottom: 30px;
+  text-align: center;
 
   .container-penulis {
     margin: 0px 200px 0px 200px;
@@ -391,7 +410,7 @@
 
 .consultant-container {
   display: grid;
-  //grid-template-columns: repeat(6, 1fr);
+  /* grid-template-columns: repeat(6, 1fr); */
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 
   row-gap: 2%;
@@ -580,12 +599,12 @@ footer .footer-bottom .firstSection a {
       max-width: 100%;
       padding-top: 10px;
     }
-     {
+     
       img {
         max-width: 100%;
         padding-top: 10px;
       }
-    }
+    
   }
 
   .CS_KonsultanContainer .consultant-container {
