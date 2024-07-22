@@ -1,118 +1,176 @@
 @media screen and (max-width: 1200px) {
-    .keunggulan-section {
-        margin: 100px 70px 50px 70px;
-    }
+  .keunggulan-section {
+    margin: 100px 70px 50px 70px;
+  }
 
-    .penulis-sukses-section .container-penulis {
-        margin: 0px 70px 0px 70px;
-    }
+  .penulis-sukses-section .container-penulis {
+    margin: 0px 70px 0px 70px;
+  }
 
-    .office-section {
-        margin: 50px 70px 50px 70px;
-    }
-    .perbandingan-section {
-        margin: 80px 70px 50px 70px;
-    }
+  .office-section {
+    margin: 50px 70px 50px 70px;
+  }
+  .perbandingan-section {
+    margin: 80px 70px 50px 70px;
+  }
 }
 
 @media screen and (max-width: 1100px) {
-    .office-section .office-pic {
-          grid-template-columns: repeat(3, 1fr);
-    }
-    
+  .office-section .office-pic {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media screen and (max-width: 950px) {
-    .perbandingan-section .tabel-perbandingan{
-        width: max-content;
+  .perbandingan-section .tabel-perbandingan {
+    width: max-content;
+  }
+}
+
+@media (max-width: 768px) {
+  .firstBanner,
+  .secondBanner {
+    flex-direction: column;
+    margin: 25px;
+    text-align: center;
+    img {
+      max-width: 100%;
+      padding-top: 10px;
     }
+
+    img {
+      max-width: 100%;
+      padding-top: 10px;
+    }
+  }
+
+  .CS_KonsultanContainer .consultant-container {
+    margin: 0;
+    padding: 50px 0;
+  }
+
+  footer .footer-upper {
+    display: flex;
+    flex-wrap: wrap;
+    .contact {
+      //background-color: orange;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      align-content: center;
+      .nav {
+        h3 {
+          text-align: center;
+        }
+        width: 100px;
+        .card {
+          .card-info {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            //width: 90px;
+          }
+        }
+      }
+    }
+    .nav {
+      width: 50%;
+    }
+  }
+
+  footer .footer-bottom {
+    padding-top: 15px;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
 }
 
 @media screen and (max-width: 630px) {
-    .perbandingan-section .tabel-perbandingan{
-        width: min-content;
-    }
+  .perbandingan-section .tabel-perbandingan {
+    width: min-content;
+  }
 
-    .office-section .office-pic {
-        grid-template-columns: repeat(2, 1fr);
+  .office-section .office-pic {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media screen and (max-width: 500px) {
-    .keunggulan-section {
-        margin: 100px 30px 50px 30px;
-    }
+  .keunggulan-section {
+    margin: 100px 30px 50px 30px;
+  }
 
-    .penulis-sukses-section .container-penulis {
-        margin: 0px 30px 0px 30px;
-    }
+  .penulis-sukses-section .container-penulis {
+    margin: 0px 30px 0px 30px;
+  }
 
-    .office-section {
-        margin: 50px 30px 50px 30px;
-    }
-    .perbandingan-section {
-        margin: 80px 30px 50px 30px;
-    }
-    
-    .detail-section{
-        width: 400px;
-    }
+  .office-section {
+    margin: 50px 30px 50px 30px;
+  }
+  .perbandingan-section {
+    margin: 80px 30px 50px 30px;
+  }
 
-    .detail-section img{
-        width: 150px;
-    }
+  .detail-section {
+    width: 400px;
+  }
+
+  .detail-section img {
+    width: 150px;
+  }
 }
 
 @media screen and (max-width: 430px) {
-    .perbandingan-section .tabel-perbandingan{
-        width: 300px;
-        th,
-        td {
-          padding: 10px;
-        }
+  .perbandingan-section .tabel-perbandingan {
+    width: 300px;
+    th,
+    td {
+      padding: 10px;
     }
-    
-    .detail-section{
-        width: 350px;
-    }
+  }
 
-    .detail-section img{
-        width: 110px;
-    }
+  .detail-section {
+    width: 350px;
+  }
+
+  .detail-section img {
+    width: 110px;
+  }
 }
 
 @media screen and (max-width: 400px) {
-    .perbandingan-section .tabel-perbandingan{
-        th,
-        td {
-          padding: 10px;
-          font-size: 14px;
-        }
+  .perbandingan-section .tabel-perbandingan {
+    th,
+    td {
+      padding: 10px;
+      font-size: 14px;
     }
-    
-    .detail-section{
-        width: 300px;
-    }
+  }
 
-    .detail-section img{
-        width: 90px;
-    }
+  .detail-section {
+    width: 300px;
+  }
 
-    .detail-section .detail-content{
-        h4{
-            font: 20px;
-        }
+  .detail-section img {
+    width: 90px;
+  }
 
-        p{
-            font-size: 14px;
-        }
-        
-        button{
-            width: 150px;
-        }
+  .detail-section .detail-content {
+    h4 {
+      font: 20px;
     }
 
-    .office-section .office-pic {
-        grid-template-columns: repeat(1, 1fr);
+    p {
+      font-size: 14px;
+    }
+
+    button {
+      width: 150px;
+    }
+  }
+
+  .office-section .office-pic {
+    grid-template-columns: repeat(1, 1fr);
   }
 }

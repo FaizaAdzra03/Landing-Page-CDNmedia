@@ -2,8 +2,6 @@
   box-sizing: border-box;
 
   font-family: "Work Sans", sans-serif;
-  margin: 0;
-  padding: 0;
 }
 /* bagian 2 */
 /* Main */
@@ -200,16 +198,14 @@
   }
 }
 
-.horizontal-scroll{
+.horizontal-scroll {
   width: 100%;
-  display: flex;
-  justify-content: center;
   padding: 10px;
   overflow-x: scroll;
   scrollbar-color: transparent transparent;
 }
 
-.horizontal-scroll::-webkit-scrollbar{
+.horizontal-scroll::-webkit-scrollbar {
   display: none;
 }
 
@@ -341,7 +337,7 @@
 
 /* First banner */
 .firstBanner {
-  margin: 5% 15% 5% 15%;
+  margin: 5% 16% 5% 16%;
   display: flex;
   justify-content: space-evenly;
   background-color: #f1f1f1;
@@ -351,7 +347,7 @@
 }
 
 .firstBanner img {
-  padding-left: 10%;
+  padding: 8%;
   width: 145px;
   height: 145px;
 }
@@ -361,10 +357,12 @@
   align-items: center;
   flex-direction: column;
 }
+
 .firstBanner .text p {
+  margin: 16px 0px 16px 0px;
   font-size: 16px;
 }
-.firstBanner .text h1 {
+.firstBanner .text h2 {
   margin-top: 20px;
   margin-bottom: 0;
 }
@@ -376,7 +374,6 @@
   text-decoration: none;
   border: none;
   font-weight: bold;
-  margin: 10px;
   cursor: pointer;
 }
 
@@ -390,8 +387,8 @@
   margin: 20px;
 }
 
-.textCS h1 {
-  font-size: 2em;
+.textCS h2 {
+  font-weight: bold;
   margin: 10px 0;
   color: black;
 }
@@ -414,6 +411,7 @@
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 
   row-gap: 2%;
+  column-gap: 8%;
 
   margin: 0px 200px 0px 200px;
   padding: 20px;
@@ -454,7 +452,7 @@
 
 /* Second banner */
 .secondBanner {
-  margin: 5% 15% 5% 15%;
+  margin: 5% 16% 5% 16%;
   display: flex;
   justify-content: space-evenly;
   background-color: #adc5a7;
@@ -464,9 +462,9 @@
 }
 
 .secondBanner img {
+  padding: 8%;
   width: 145px;
   height: 145px;
-  padding-left: 10%;
 }
 .secondBanner .text {
   margin: 10px;
@@ -475,9 +473,10 @@
   flex-direction: column;
 }
 .secondBanner .text p {
+  margin: 16px 0px 16px 0px;
   font-size: 16px;
 }
-.secondBanner .text h1 {
+.secondBanner .text h2 {
   margin-top: 20px;
   margin-bottom: 0;
 }
@@ -488,7 +487,6 @@
   text-decoration: none;
   border: none;
   font-weight: bold;
-  margin: 10px;
   cursor: pointer;
 }
 
@@ -586,51 +584,4 @@ footer .footer-bottom .firstSection a {
   color: white;
   padding-right: 20px;
   text-decoration: none;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .firstBanner,
-  .secondBanner {
-    flex-direction: column;
-    margin: auto;
-    text-align: center;
-    img {
-      max-width: 100%;
-      padding-top: 10px;
-    }
-     
-      img {
-        max-width: 100%;
-        padding-top: 10px;
-      }
-    
-  }
-
-  .CS_KonsultanContainer .consultant-container {
-    margin: 0;
-    padding: 50px 0;
-  }
-
-  footer .footer-upper {
-    display: flex;
-    flex-wrap: wrap;
-    .nav {
-      width: 50%;
-
-      .card-info {
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        width: 90px;
-      }
-    }
-  }
-
-  footer .footer-bottom {
-    padding-top: 15px;
-    flex-direction: column;
-    text-align: center;
-    gap: 10px;
-  }
 }
