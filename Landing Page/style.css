@@ -1,48 +1,42 @@
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+
   font-family: "Work Sans", sans-serif;
 }
-
-p{
-  font-size: 18px;
-  color: #595353;
-}
-
+/* bagian 2 */
 /* Main */
 /* Mau Tahu Lebih */
-.detail-tentang{
+.detail-tentang {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.detail-section{
+.detail-section {
   margin: 20px 200px 30px 200px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #FAFABE;
+  background-color: #fafabe;
   padding: 30px;
   border-radius: 20px;
   gap: 20px;
   width: 700px;
 
-  .detail-content{
+  .detail-content {
     display: flex;
     flex-direction: column;
     gap: 15px;
 
-    h4{
+    h4 {
       font-size: 25px;
     }
 
-    p{
+    p {
       font-size: 16px;
       color: #595353;
     }
 
-    button{
+    button {
       margin-top: 20px;
       background-color: white;
       border: none;
@@ -53,16 +47,15 @@ p{
       align-self: center;
       box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1);
     }
-
   }
 }
 
-.detail-content button:hover{
+.detail-content button:hover {
   box-shadow: 0 4px 2px rgba(163, 157, 157, 0.473);
 }
 
 /* Office Professional */
-.office-section{
+.office-section {
   margin: 50px 200px 50px 200px;
   display: flex;
   flex-direction: column;
@@ -70,17 +63,17 @@ p{
   justify-content: center;
   gap: 20px;
 
-  h3{
+  h3 {
     font-size: 35px;
     font-weight: 700;
   }
 
-  .office-pic{
+  .office-pic {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 10px;
 
-    img{
+    img {
       width: 190px;
       border-radius: 8px;
     }
@@ -88,7 +81,7 @@ p{
 }
 
 /* Perbandingan */
-.perbandingan-section{
+.perbandingan-section {
   margin: 80px 200px 50px 200px;
   display: flex;
   align-items: center;
@@ -96,42 +89,43 @@ p{
   flex-direction: column;
   gap: 20px;
 
-  h3{
+  h3 {
     font-size: 35px;
     font-weight: 700;
   }
 
-  h5{
+  h5 {
     font-size: 23px;
     font-weight: 500;
   }
 
-  .tabel-perbandingan{
+  .tabel-perbandingan {
     border-collapse: collapse;
     margin: 25px 0;
     font-size: 16px;
     width: 900px;
-    
-    th, td{
+
+    th,
+    td {
       padding: 15px;
       font-size: 16px;
       text-align: center;
     }
 
-    th{
+    th {
       background-color: #416648;
       color: white;
       font-weight: 600;
     }
 
-    tbody tr:nth-child(even){
-      background-color: #EAEAEA;
+    tbody tr:nth-child(even) {
+      background-color: #eaeaea;
     }
 
     thead th:first-child {
       border-top-left-radius: 10px;
     }
-    
+
     thead th:last-child {
       border-top-right-radius: 10px;
     }
@@ -139,7 +133,7 @@ p{
 }
 
 /* Keunggulan */
-.keunggulan-section{
+.keunggulan-section {
   margin: 100px 200px 50px 200px;
   display: flex;
   flex-direction: column;
@@ -147,26 +141,26 @@ p{
   justify-content: center;
   gap: 15px;
 
-  h2{
+  h2 {
     font-size: 35px;
     font-weight: 700;
     color: #416648;
   }
 
-  h5{
+  h5 {
     font-size: 23px;
     font-weight: 500;
   }
 
-  .keunggulan-list{
+  .keunggulan-list {
     display: flex;
     flex-direction: row;
     gap: 20px;
     padding-top: 30px;
   }
 
-  .keunggulan-card{
-    background-color: #FFFFFF;
+  .keunggulan-card {
+    background-color: #ffffff;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -175,25 +169,25 @@ p{
     padding: 12px;
     width: 160px;
 
-    img{
+    img {
       width: 115px;
       align-self: center;
       justify-self: center;
     }
 
-    .keunggulan-content{
+    .keunggulan-content {
       text-align: center;
-      background-color: #F9FBF9;
+      background-color: #f9fbf9;
       border-radius: 7px;
       padding: 5px 10px 5px 10px;
 
-      h6{
+      h6 {
         font-size: 15px;
         font-weight: 800;
         padding-top: 10px;
       }
 
-      p{
+      p {
         padding-top: 10px;
         font-size: 12px;
       }
@@ -202,31 +196,32 @@ p{
 }
 
 /* Penulis Sukses */
-.penulis-sukses-section{
+.penulis-sukses-section {
   margin: 100px 0px 30px 0px;
-  background: linear-gradient(to top, #316D4F, #658374);
+  background: linear-gradient(to top, #316d4f, #658374);
   padding-top: 30px;
   padding-bottom: 30px;
 
-  .container-penulis{
+  .container-penulis {
     margin: 0px 200px 0px 200px;
     display: flex;
-    flex-direction: column;align-items: center;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     color: white;
     gap: 20px;
     padding-top: 30px;
 
-    h2{
+    h2 {
       font-size: 35px;
       font-weight: 700;
     }
 
-    p{
+    p {
       color: white;
     }
 
-    .penulis-list{
+    .penulis-list {
       display: flex;
       flex-direction: row;
       gap: 25px;
@@ -234,7 +229,7 @@ p{
       padding-top: 20px;
     }
 
-    .penulis-card{
+    .penulis-card {
       border-radius: 20px;
       width: 230px;
       height: 400px;
@@ -245,7 +240,7 @@ p{
       gap: 15px;
       box-shadow: 0 2px 5px rgba(255, 255, 255, 0.815);
 
-      img{
+      img {
         width: 190px;
         align-self: center;
         justify-self: center;
@@ -253,16 +248,16 @@ p{
         border-radius: 12px;
       }
 
-      .penulis-content{
+      .penulis-content {
         padding: 5px 15px 15px 5px;
         text-align: center;
 
-        h3{
+        h3 {
           font-weight: 700;
         }
-        p{
+        p {
           padding: 10px;
-          color: #8A8484;
+          color: #8a8484;
           font-size: 16px;
         }
       }
@@ -270,10 +265,64 @@ p{
   }
 }
 
+/* bagian 4 */
+
+/* FAQ */
+.accordion h1 {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 25px;
+}
+.accordion-item {
+  width: 90%;
+  max-width: 800px;
+  background-color: #ecefea;
+  color: #504d4d;
+  margin: 1rem auto;
+  padding: 10px;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+}
+
+.accordion-item-header {
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  min-height: 3.5rem;
+  line-height: 1.25rem;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.accordion-item-header::before {
+  content: "\00BB";
+  font-size: 2rem;
+  margin-right: 10px;
+  padding-bottom: 5px;
+  transition: transform 0.2s ease-in-out;
+}
+.accordion-item-header.active::before {
+  padding-top: 8px;
+  content: "\2212";
+}
+
+.accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.accordion-item-body-content {
+  padding: 1rem;
+  line-height: 1.5rem;
+  border-top: 1px solid;
+  border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+}
+
 /* First banner */
 .firstBanner {
-  margin: 100px 260px 60px 260px;
-  /* padding: 10px; */
+  margin: 5% 15% 5% 15%;
   display: flex;
   justify-content: space-evenly;
   background-color: #f1f1f1;
@@ -283,12 +332,11 @@ p{
 }
 
 .firstBanner img {
-  width: 100px;
-  height: auto;
-  margin-right: 20px;
+  padding-left: 10%;
+  width: 145px;
+  height: 145px;
 }
 .firstBanner .text {
-  /* max-width: 50%; */
   margin: 10px;
   display: flex;
   align-items: center;
@@ -310,6 +358,12 @@ p{
   border: none;
   font-weight: bold;
   margin: 10px;
+  cursor: pointer;
+}
+
+.firstBanner button:hover {
+  background-color: #254336;
+  color: white;
 }
 
 /* csKomsultan */
@@ -323,6 +377,7 @@ p{
   color: black;
 }
 .textCS p {
+  text-align: center;
   margin: 0;
 }
 .textCS {
@@ -336,9 +391,10 @@ p{
 
 .consultant-container {
   display: grid;
-  /* grid-template-columns: repeat(6, 1fr); */
+  //grid-template-columns: repeat(6, 1fr);
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  /* column-gap: 2%; */
+
+  row-gap: 2%;
 
   margin: 0px 200px 0px 200px;
   padding: 20px;
@@ -347,16 +403,15 @@ p{
 .consultant-card {
   background-color: #f1f1f1;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 200px;
+  width: 250px;
   height: 300px;
   padding: 20px;
   text-align: center;
 }
 .consultant-card img {
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
 }
 .consultant-card h2 {
   font-size: 1.2em;
@@ -381,7 +436,6 @@ p{
 /* Second banner */
 .secondBanner {
   margin: 5% 15% 5% 15%;
-  /* padding: 10px; */
   display: flex;
   justify-content: space-evenly;
   background-color: #adc5a7;
@@ -391,12 +445,11 @@ p{
 }
 
 .secondBanner img {
-  width: 100px;
-  height: auto;
-  margin-right: 20px;
+  width: 145px;
+  height: 145px;
+  padding-left: 10%;
 }
 .secondBanner .text {
-  /* max-width: 50%; */
   margin: 10px;
   display: flex;
   align-items: center;
@@ -404,7 +457,6 @@ p{
 }
 .secondBanner .text p {
   font-size: 16px;
-  color: white;
 }
 .secondBanner .text h1 {
   margin-top: 20px;
@@ -418,6 +470,12 @@ p{
   border: none;
   font-weight: bold;
   margin: 10px;
+  cursor: pointer;
+}
+
+.secondBanner button:hover {
+  background-color: #254336;
+  color: white;
 }
 /* footer */
 footer {
@@ -445,8 +503,9 @@ footer .footer-upper .card-info {
   display: flex;
 }
 footer .footer-upper .card-info img {
-  max-width: 20%;
+  padding: 10px;
 }
+
 footer .nav h3 {
   font-size: 18px;
   font-weight: bold;
@@ -490,9 +549,6 @@ footer .social-media ul {
 }
 footer .social-media li {
   list-style-type: none;
-
-  /* height: 30px;
-  padding: 10px; */
 }
 footer .social-media li a {
   color: #092635;
@@ -511,4 +567,51 @@ footer .footer-bottom .firstSection a {
   color: white;
   padding-right: 20px;
   text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .firstBanner,
+  .secondBanner {
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    img {
+      max-width: 100%;
+      padding-top: 10px;
+    }
+     {
+      img {
+        max-width: 100%;
+        padding-top: 10px;
+      }
+    }
+  }
+
+  .CS_KonsultanContainer .consultant-container {
+    margin: 0;
+    padding: 50px 0;
+  }
+
+  footer .footer-upper {
+    display: flex;
+    flex-wrap: wrap;
+    .nav {
+      width: 50%;
+
+      .card-info {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        width: 90px;
+      }
+    }
+  }
+
+  footer .footer-bottom {
+    padding-top: 15px;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
 }
