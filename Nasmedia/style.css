@@ -1,16 +1,20 @@
 body {
     font-family: Arial, sans-serif;
-}
-
-.header {
-    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
 }
 
 .nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 30px;
+    top: 0;
+    z-index: 99;
+    position: fixed;
+    background-color: #ffffff;
+    
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
 }
 
 .nav__data {
@@ -30,11 +34,12 @@ body {
     cursor: pointer;
 }
 
-.nav__burger,
-.nav__close {
+.nav__burger {
     display: none;
-    font-size: 20px;
-    color: white;
+    font-size: 30px;
+    color: #416648;
+    border: none;
+    background-color: transparent;
 }
 
 .nav__menu {
@@ -46,6 +51,7 @@ body {
     display: flex;
     margin: 0;
     padding: 0;
+    align-items: center;
 }
 
 .nav__link {
@@ -131,23 +137,19 @@ body {
     display: flex;
     flex-direction: column;
     padding-left: 20%;
-    background: url('/assets/Rectangle\ 6.png') no-repeat left center;
     background-position: right center;
     background-size: cover;
-    padding: 100px;
+    height: 75vh;
+    padding: 150px 100px;
     border-top-right-radius: 250px;
     color: #333; /* Warna teks untuk memastikan keterbacaan */
+    background-color: #ffffffe7;
     z-index: 2; /* Memastikan elemen teks di atas latar belakang */
     position: relative;
 }
 
-p{
-    
-}
-
 .main-content-img {
     width : 50%;
-    padding-top: 180px;;
 }
 
 /* Consultation Button */
@@ -188,22 +190,36 @@ p{
 }
 
 /* Features Section */
-.features {
+.features{
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0 30px 0;
+
+}
+
+.feature-list {
+    display: flex;
     align-items: center;
     flex-wrap: wrap;
+    padding: 20px;
+    border-radius: 20px;
     margin-top: 80px;
     background-color: #D9D9D9;
+    width: 85%;
+    max-width: 1500px;
 }
 
 .feature {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
     flex: 1;
     min-width: 200px;
     margin: 10px;
     align-items: center;
+    gap: 15px;
 }
 
 .feature img {
@@ -218,12 +234,12 @@ p{
 }
 
 .feature h3 {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 5px;
 }
 
 .feature p {
-    font-size: 14px;
+    font-size: 16px;
     color: #555;
 }
 
@@ -289,10 +305,16 @@ p{
         display: block;
     }
 
+    .nav{
+        flex-direction: column;
+    }
+
+
     .nav__menu {
         display: none;
         flex-direction: column;
         width: 100%;
+        background-color: #fff;
     }
 
     .nav__menu.active {
@@ -301,11 +323,13 @@ p{
 
     .nav__list {
         flex-direction: column;
+        width: 100%;
     }
 
     .nav__link {
         padding: 10px;
         text-align: center;
+        width: 100%;
     }
 
     .text-with-image {
@@ -321,18 +345,6 @@ p{
     }
 
     .nav__toggle .nav__burger {
-        display: block;
-    }
-
-    .nav__toggle .nav__close {
-        display: none;
-    }
-
-    .nav__menu.show .nav__burger {
-        display: none;
-    }
-
-    .nav__menu.show .nav__close {
         display: block;
     }
 }
