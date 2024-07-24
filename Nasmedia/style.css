@@ -6,6 +6,7 @@ body {
 
 .nav {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     padding: 10px 30px;
     top: 0;
@@ -51,7 +52,7 @@ body {
     display: flex;
     margin: 0;
     padding: 0;
-    align-items: center;
+    
 }
 
 .nav__link {
@@ -140,22 +141,34 @@ body {
     background-position: right center;
     background-size: cover;
     height: 75vh;
-    padding: 150px 100px;
-    border-top-right-radius: 250px;
+    padding:100px;
+    border-top-right-radius: 400px;
     color: #333; /* Warna teks untuk memastikan keterbacaan */
     background-color: #ffffffe7;
     z-index: 2; /* Memastikan elemen teks di atas latar belakang */
     position: relative;
 }
 
+.text-content p{
+    padding-top: 60px;
+    font-size: 30px;
+}
+
+.benefits-list{
+    font-size: 13px;
+    padding-left: 20px;
+}
 .main-content-img {
     width : 50%;
+    padding-top: 338px;
+    /*transform: translateX(-50px);*/
 }
 
 /* Consultation Button */
 .consultation {
-    padding-left: 100px;;
+    padding-left: 50px;
     padding-top: 20px;
+    
 }
 
 .consultation-button {
@@ -165,9 +178,9 @@ body {
     color: white; /* White text */
     border: none;
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 15px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 50px;
 }
 
 .link-overlay {
@@ -189,37 +202,24 @@ body {
     background-color: #0056b3; /* Darker blue on hover */
 }
 
-/* Features Section */
-.features{
+/*Features Section */
+.feature-list{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 30px 0 30px 0;
-
-}
-
-.feature-list {
-    display: flex;
-    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    align-items: flex-start;
     flex-wrap: wrap;
-    padding: 20px;
-    border-radius: 20px;
     margin-top: 80px;
     background-color: #D9D9D9;
-    width: 85%;
-    max-width: 1500px;
 }
 
 .feature {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
     flex: 1;
     min-width: 200px;
     margin: 10px;
     align-items: center;
-    gap: 15px;
 }
 
 .feature img {
@@ -234,12 +234,12 @@ body {
 }
 
 .feature h3 {
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 5px;
 }
 
 .feature p {
-    font-size: 16px;
+    font-size: 14px;
     color: #555;
 }
 
