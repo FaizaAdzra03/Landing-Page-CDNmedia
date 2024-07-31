@@ -1,0 +1,298 @@
+@media screen and (max-width: 1100px) {
+  .horizontal-scroll {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+    overflow-x: scroll;
+    scrollbar-color: transparent transparent;
+  }
+  
+  .horizontal-scroll::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  header{
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .perbandingan-section .tabel-perbandingan {
+    width: max-content;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  header{
+    font-size: 14px;
+  }
+
+  .nav__toggle {
+    display: block;
+  }
+
+  .nav {
+    flex-direction: column;
+  }
+
+  .nav__menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff;
+  }
+
+  .nav__menu.active {
+    display: flex;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .nav__link {
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .nav__toggle .nav__burger {
+    display: block;
+  }
+
+  .text-content{
+    padding: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .text-content{
+    p{
+      font-size: 1.5rem;
+    }
+    li{
+      font-size: 1rem;
+    }
+  }
+
+  .feature {
+    flex: 1 1 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .feature img {
+    max-width: 80px; /* Sesuaikan ukuran gambar untuk layar kecil */
+    margin-bottom: 10px;
+  }
+
+  .feature-text {
+    font-size: 0.9rem;
+  }
+
+  .feature-text h3 {
+    font-size: 1rem;
+  }
+
+  .feature-text p {
+    font-size: 0.8rem;
+  }
+
+  .features {
+    flex-direction: column;
+  }
+
+  .award-section p {
+    font-size: 0.9rem;
+  }
+
+  .award-section h3 {
+    font-size: 1.3rem;
+  }
+
+  .award-img {
+    max-width: 80%;
+    margin-top: 15px;
+  }
+  .firstBanner,
+  .secondBanner {
+    flex-direction: column;
+    margin: 25px;
+    text-align: center;
+    img {
+      max-width: 100%;
+      padding-top: 10px;
+    }
+
+    img {
+      max-width: 100%;
+      padding-top: 10px;
+    }
+  }
+  .ambassador-profile {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .ambassador-img {
+    max-width: 120px; /* Sesuaikan ukuran gambar untuk layar kecil */
+    margin-bottom: 15px;
+  }
+
+  .ambassador-info h3 {
+    font-size: 1.3rem;
+  }
+
+  .ambassador-info h4 {
+    font-size: 1rem;
+  }
+
+  .ambassador-info p {
+    font-size: 0.9rem;
+  }
+
+  .CS_KonsultanContainer .consultant-container {
+    margin: 0;
+    padding: 50px 0;
+  }
+
+  footer .footer-upper {
+    display: flex;
+    flex-wrap: wrap;
+    .contact {
+      /* background-color: orange; */
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      align-content: center;
+      .nav-footer {
+        h3 {
+          text-align: center;
+        }
+        width: 100px;
+        .card-footer {
+          .card-info {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            /* width: 90px; */
+          }
+        }
+      }
+    }
+    .nav-footer {
+      width: 50%;
+    }
+  }
+
+  footer .footer-bottom {
+    padding-top: 15px;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .perbandingan-section .tabel-perbandingan {
+    width: min-content;
+  }
+
+  .text-content{
+    p{
+      font-size: 1.2rem;
+    }
+    li{
+      font-size: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .content-wrapper{
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    height: fit-content;
+    width: 100%;
+
+    .text-with-image{
+      width: 100%;
+    }
+
+    .text-content{
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+    }
+
+    img{
+      padding-top: 10px;
+      width: 100%;
+      align-self: center;
+      justify-self: center;
+    }
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .perbandingan-section .tabel-perbandingan {
+    width: 300px;
+    th,
+    td {
+      padding: 10px;
+    }
+  }
+
+  .table{
+    font-size: 15px;
+  }
+
+  .detail-section img {
+    width: 110px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .perbandingan-section .tabel-perbandingan {
+    th,
+    td {
+      padding: 10px;
+      font-size: 14px;
+    }
+  }
+
+  .detail-section img {
+    width: 90px;
+  }
+
+  .detail-section .detail-content {
+    h4 {
+      font: 20px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+
+    button {
+      width: 150px;
+    }
+  }
+
+  .penulis-sukses-section .container-penulis {
+    margin: 10px 20px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .table{
+    font-size: 12px;
+  }
+}
+
