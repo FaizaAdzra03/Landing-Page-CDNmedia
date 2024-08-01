@@ -213,7 +213,10 @@
   }
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 525px) {
+  .cSBanner{
+    align-self: center;
+  }
   .content-wrapper{
     flex-direction: column;
     align-items: start;
@@ -292,7 +295,16 @@
 
 @media screen and (max-width: 350px) {
   .table{
+    padding: 5px;
     font-size: 12px;
   }
+
+  .perbandingan-section .tabel-perbandingan {
+    th, td {
+        padding: 8px;
+        font-size: 12px;
+    }
+  }
 }
+
 
