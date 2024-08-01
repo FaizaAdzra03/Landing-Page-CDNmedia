@@ -46,12 +46,7 @@
 .grey {
   color: #999999;
 }
-/* .nav__logo {
-  color: white;
-  text-decoration: none;
-  font-size: 20px;
-  margin-right: 20px;
-} */
+
 
 .nav__toggle {
   display: none;
@@ -121,6 +116,9 @@
 /* Main Content */
 .main-content {
   background-color: #0f7040;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.041),rgba(0,0,0,0.1)), url("./assets//rita-gortz-3utNC301VSk-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .content-wrapper {
@@ -133,7 +131,7 @@
 
 .text-with-image {
   align-items: center;
-  width: 50%;
+  width: 60%;
 }
 
 .text-content {
@@ -141,10 +139,11 @@
   flex-direction: column;
   width: 95%;
   height: 120vh;
+  padding-top: 30px;
 
   border-top-right-radius: 300px;
   color: #333;
-  background-color: #ffffffe7;
+  background-color: #fffffff6;
 
   align-items: center;
   justify-content: center;
@@ -164,29 +163,43 @@
 
 .benefits-list {
   font-size: 18px;
+  line-height: 30px;
+  font-weight: 500;
 }
 
 .main-content-img {
   width: 100%;
+  max-width: 420px;
 }
 .cSBanner {
   width: 50%;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   flex-direction: column;
   align-self: flex-end;
   p {
+    align-self: center;
     margin: 20px;
     color: white;
     font-size: 29px;
   }
   button {
+    width: 95%;
+    max-width: 420px;
+    align-self: center;
     color: black;
-    background-color: #ffda76;
+    border: none;
+    margin: 0px 20px 0 20px;
+    background-color: #ffffff;
+    cursor: pointer;
+    padding: 12px 50px 12px 50px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1);
   }
   button:hover {
-    background-color: #ffffffe7;
-    color: blue;
+    background-color: #6ca387;
+    color: #ffffff;
   }
 }
 /* Consultation Button */
@@ -201,17 +214,17 @@
   border: none;
   padding: 15px 18px;
   font-size: 16px;
-  cursor: pointer;
   border-radius: 25px;
 
   text-decoration: none;
   color: white;
 }
 
-/* Optional: Add hover effect */
-.consultation-button:hover {
-  background-color: #585757c0; /* Darker blue on hover */
+.consultation-button:hover{
+  background-color: #817c7be3;
 }
+
+
 
 /*Features Section */
 .features {
